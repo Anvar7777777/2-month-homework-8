@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 1500px;
+}
+.box{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 4px 33px 13px rgba(27,217,206,0.75);
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+    animation: goRight;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+    /* animation-fill-mode: backwards; */
+    /* animation-play-state: running; */
+    /* animation-delay: 5s; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: goRight 5s 5s 2 alternate backwards; */
+}
+@keyframes goRight {
+    /* from{
+        transform: translateX(0px) scale(1);
+    }
+    to{
+        transform: translateX(500px) scale(1);
+    } */
+
+    
+
+    0%{
+        transform: translateX(0px);
+        background-color: rgb(0, 0, 0) ;
+    }
+     10%{
+        transform: translateX(500px) translateY(0px);
+        
+    }
+    20%{
+        transform:translateX(500px) translateY(500px) ;
+        background-color: rgb(37, 36, 36);
+    }
+    30%{
+        transform:translateX(1300px) translateY(500px) ;
+        background-color: rgb(63, 60, 60);
+    }
+    40%{
+        transform: translateX(1300px) translateY(700px);
+        background-color: rgb(96, 95, 95);
+    }
+    50%{
+        transform: translate(900px) translateY(700px);
+        background-color: rgb(129, 126, 126);
+    }
+    60%{
+        transform: translateX(900px) translateY(450px);
+        background-color: rgb(182, 176, 176);
+    }
+    70%{
+        transform: translateX(500px) translateY(450px);
+        background-color: rgb(177, 173, 173);
+    }
+    80%{
+        transform: translateX(200px) translateY(350px);
+        background-color: rgb(174, 171, 171);
+    }
+    90%{
+        transform: translateX(20px) translateY(400px);
+        background-color: rgb(226, 224, 224);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+    
+  
+}
